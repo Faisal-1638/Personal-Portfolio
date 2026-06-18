@@ -331,46 +331,7 @@
   <div id="toast">✓ Message Sent Successfully!</div>
 
   <script>
-    // ── current page tracker
-    let current = 'home';
-
-    // ── show a page by id
-    function showPage(id) {
-      if (id === current) {
-        // still close mobile menu
-        document.getElementById('navLinks').classList.remove('open');
-        return;
-      }
-
-      // hide old
-      document.getElementById('page-' + current).classList.remove('active');
-
-      // show new
-      current = id;
-      document.getElementById('page-' + current).classList.add('active');
-
-      // scroll top
-      window.scrollTo(0, 0);
-
-      // sync nav highlights
-      syncNav();
-
-      // close mobile menu
-      document.getElementById('navLinks').classList.remove('open');
-    }
-
-    // ── keep nav link highlight in sync
-    function syncNav() {
-      const order = ['home', 'about', 'projects', 'contact'];
-      document.querySelectorAll('.nav-links a').forEach(function(a, i) {
-        if (order[i] === current) {
-          a.classList.add('active');
-        } else {
-          a.classList.remove('active');
-        }
-      });
-    }
-
+   
     // ── mobile hamburger
     document.getElementById('menuBtn').addEventListener('click', function() {
       document.getElementById('navLinks').classList.toggle('open');
