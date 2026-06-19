@@ -25,7 +25,7 @@
       position: fixed;
       top: 0; left: 0;
       z-index: 1000;
-      background: rgba(15,23,42,0.88);
+      background: rgba(30, 44, 58, 0.88);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(255,255,255,0.07);
     }
@@ -121,7 +121,7 @@
       text-align: center;
       padding: 100px 20px 60px;
       background:
-        linear-gradient(rgba(0,0,0,0.80), rgba(0,0,0,0.90)),
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.90)),
         url('photo.jpg')
         center/cover no-repeat fixed;
     }
@@ -483,31 +483,77 @@
     #toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
 
     /* ══ RESPONSIVE ══ */
+    
     @media (max-width: 860px) {
-      .about-grid   { grid-template-columns: 1fr; }
-      .contact-grid { grid-template-columns: 1fr; }
-    }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
 
-    @media (max-width: 640px) {
-      .nav-links {
-        position: fixed;
-        top: 64px; right: -100%;
-        width: 230px;
-        height: 100vh;
-        background: rgba(15,23,42,0.97);
-        flex-direction: column;
-        padding: 28px 16px;
-        gap: 4px;
-        transition: right 0.35s;
-        border-left: 1px solid var(--border);
-      }
-      .nav-links.open { right: 0; }
-      .nav-links a { font-size: 16px; padding: 12px 18px; }
-      .menu-btn { display: block; }
-      .frow { flex-direction: column; gap: 0; }
-    }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
+@media (max-width: 840px) {
 
+  /* Mobile Menu */
+  .nav-links {
+    position: fixed;
+    top: 64px;
+    right: -100%;
+    width: 230px;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.97);
+    flex-direction: column;
+    padding: 28px 16px;
+    gap: 4px;
+    transition: right 0.35s ease;
+    border-left: 1px solid var(--border);
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    padding: 12px 18px;
+    width: 100%;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  /* Form */
+  .frow {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* Hero */
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 10px 22px;
+    border-radius: 15px;
+    font-size: 13px;
+  }
+
+  /* Logo */
+  .logo {
+    font-size: 18px;
+  }
+}
 /* ══ FOOTER ══ */
  footer {
   text-align: center;
