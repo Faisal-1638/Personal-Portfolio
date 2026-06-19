@@ -121,9 +121,11 @@
       text-align: center;
       padding: 100px 20px 60px;
       background:
-        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.90)),
-        url('photo.jpg')
-        center/cover no-repeat fixed;
+        linear-gradient(rgba(0,0,0,0.80), rgba(0,0,0,0.95)),
+        url('pht.jpg');
+         background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
     }
 
     .hero-content { max-width: 860px; animation: fadeUp 0.9s ease both; }
@@ -210,6 +212,20 @@
     .section-title p { color: var(--dim); font-size: 15px; }
 
     /* ══ ABOUT ══ */
+    .about{
+      background:
+  radial-gradient(
+    circle at 80% 20%,
+    rgba(59,130,246,0.05),
+    transparent 40%
+  ),
+  linear-gradient(
+    160deg,
+    #070b12 0%,
+    #0b1220 50%,
+    #0f172a 100%
+  );
+    }
     .about-grid {
       display: grid;
       grid-template-columns: 380px 1fr;
@@ -306,6 +322,20 @@
     .card-actions { display: flex; gap: 10px; }
 
     /* ══ CONTACT ══ */
+    .contact{
+      background:
+  radial-gradient(
+    circle at 80% 20%,
+    rgba(59,130,246,0.05),
+    transparent 40%
+  ),
+  linear-gradient(
+    160deg,
+    #070b12 0%,
+    #0b1220 50%,
+    #0f172a 100%
+  );
+    }
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1.3fr;
@@ -533,6 +563,11 @@
   }
 
   /* Hero */
+  .hero{
+     background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+  }
   .hero-content h1 {
     font-size: 38px;
   }
