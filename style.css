@@ -484,16 +484,7 @@
     .fg select option { background: var(--bg2); }
     .fg textarea { resize: none; height: 115px; }
 
-    /* ══ FOOTER ══ */
-    /* footer {
-      text-align: center;
-      padding: 26px 20px;
-      border-top: 1px solid rgba(255,255,255,0.07);
-      color: var(--dim);
-      font-size: 14px;
-    } */
-
-    /* ══ TOAST ══ */
+    /* ══------ TOAST ══------ */
     #toast {
       position: fixed;
       bottom: 30px; left: 50%;
@@ -523,6 +514,8 @@
     grid-template-columns: 1fr;
   }
 }
+
+/*---------->  Mobile view handle  <------------*/
 
 @media (max-width: 840px) {
 
