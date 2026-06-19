@@ -6,11 +6,14 @@
  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 
     :root {
-      --bg:     #0f172a;
-      --bg2:    #1e293b;
+        --bg:  #00050d;
+        --bg2: #020817;
+         
+   /* --bg:  #010409;
+  --bg2: #0a0f1c; */
       --sky:    #38bdf8;
       --white:  #f1f5f9;
-      --muted:  #cbd5e1;
+      --muted:  #e5e8ec;
       --dim:    #94a3b8;
       --border: rgba(56,189,248,0.12);
     }
@@ -203,12 +206,12 @@
       color: var(--sky);
       margin-bottom: 8px;
     }
-
-    .section-title p { color: var(--dim); font-size: 15px; }
+    .section-title p { 
+      color: var(--dim); font-size: 15px; 
+    }
 
     /* --------------> ABOUT <--------------*/
-
-    .about{
+    .aboutc{
       background:
       radial-gradient
       (
@@ -320,23 +323,6 @@
     .card-actions { display: flex; gap: 10px; }
 
     /* --------------> CONTACT Section<--------------- */
-    .contact
-    {
-      background:
-        radial-gradient
-        (
-          circle at 80% 20%,
-          rgba(59,130,246,0.05),
-          transparent 40%
-        ),
-       linear-gradient
-       (
-        160deg,
-        #070b12 0%,
-        #0b1220 50%,
-        #0f172a 100%
-       );
-    }
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1.3fr;
@@ -380,7 +366,8 @@
       padding: 14px 16px;
       margin-bottom: 12px;
 
-      background: rgba(255,255,255,0.05);
+      /* background: rgba(255,255,255,0.05); */
+      background: var(--bg2);
       border: 1px solid rgba(255,255,255,0.08);
       border-radius: 12px;
 
@@ -435,6 +422,7 @@
       gap: 8px;
       padding: 9px 18px;
       background: var(--bg2);
+      /* background: rgba(255,255,255,0.05); */
       border: 1px solid var(--border);
       color: var(--white);
       border-radius: 12px;
@@ -447,7 +435,7 @@
     .social-btn svg { width: 17px; height: 17px; fill: currentColor; }
 
     .cform-box {
-      background: var(--bg2);
+      background:var(--bg2);
       border: 1px solid var(--border);
       border-radius: 20px;
       padding: 32px;
