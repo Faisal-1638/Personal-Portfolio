@@ -120,7 +120,7 @@
       padding: 100px 20px 60px;
       background:
         linear-gradient(rgba(0,0,0,0.80), rgba(0,0,0,0.95)),
-         url('pht.jpg');
+         url('image/pht.jpg');
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -292,8 +292,8 @@
 
     .card {
       background: var(--bg2);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 20px;
+      border: 2px solid rgba(252, 248, 248, 0.219);
+      border-radius: 30px;
       overflow: hidden;
       transition: transform 0.32s, box-shadow 0.32s, border-color 0.32s;
     }
@@ -366,8 +366,8 @@
       padding: 14px 16px;
       margin-bottom: 12px;
 
-      /* background: rgba(255,255,255,0.05); */
-      background: var(--bg2);
+      background: rgba(255,255,255,0.05);
+      /* background: var(--bg2); */
       border: 1px solid rgba(255,255,255,0.08);
       border-radius: 12px;
 
@@ -421,8 +421,8 @@
       align-items: center;
       gap: 8px;
       padding: 9px 18px;
-      background: var(--bg2);
-      /* background: rgba(255,255,255,0.05); */
+      /* background: var(--bg2); */
+      background: rgba(255,255,255,0.05);
       border: 1px solid var(--border);
       color: var(--white);
       border-radius: 12px;
@@ -435,7 +435,7 @@
     .social-btn svg { width: 17px; height: 17px; fill: currentColor; }
 
     .cform-box {
-      background:var(--bg2);
+      background: rgba(255,255,255,0.05);
       border: 1px solid var(--border);
       border-radius: 20px;
       padding: 32px;
