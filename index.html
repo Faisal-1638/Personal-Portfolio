@@ -21,12 +21,12 @@
       <div class="logo">
   <span class="logo-main">FA</span><span class="logo-dot">.</span><span class="logo-dev">Dev</span>
       </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
     <!-- <button class="menu-btn" id="menuBtn">☰</button> -->
     </nav>
   </header>
@@ -35,10 +35,14 @@
   <section id="home">
     <div class="hero">
       <div class="hero-content">
-        <h1>Assalamualaikum, I'm <span>Faisal Ahmed</span></h1>
-        <p>
-          A Computer Science Student Build my first frontend website using <abbr title=" Hyper Text Markup Language">HTML,</abbr> <abbr title=" Cascading Style Sheets ">CSS,</abbr> and JavaScript.
-        </p>
+        <h2>Assalamualaikum, I'm </h2> 
+        <h1>Faisal Ahmed</h1>
+         <h2>Competitive Programmer & Frontend Developer</h2>
+        
+         <p>
+      Passionate about problem solving, data structures and algorithms.
+    </p>
+
          <div class="hero-btns">
            <a href="#projects" class="btn btn-primary" >View Projects</a>
            <a href="#contact" class="btn btn-outline">Contact Me</a>
@@ -48,26 +52,27 @@
   </section>
 
   <!-- ══════════ ABOUT ══════════ -->
-  <section id="about" class="aboutc">
+  <section id="about">
     <div class="page-wrap">
+
       <div class="section-title">
         <h2>About Me</h2>
         <p>Know more about my skills and journey.</p>
       </div>
 
       <div class="about-grid">
+
         <div class="about-photo">
-          <img src="image/photo.jpg" alt="Faisal Ahmed"
-           onerror="this.src='https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=600&auto=format&fit=crop'"
-           > 
+          <img src="image/photo.jpg" alt="Faisal Ahmed">
         </div>
 
         <div class="about-text">
           <hr style="width: 98%; height: 1px; border: none; background: #c6bebe; margin: 0 auto;"><br><br>
-          <h3>I Build Modern Websites</h3>
+          <h3>What i am doing</h3>
           <p>I am a frontend developer who loves creating clean, elegant, and user-friendly websites. I enjoy learning new technologies and building real-world projects.</p>
           <p>My goal is to create websites that are beautiful, fast, responsive, and easy to use across all devices.</p>
-
+          <br>
+          <h2>Skills & Tech Stack</h2>
           <div class="skills-row">
             <span class="skill-tag">C & C++</span>
             <span class="skill-tag">JAVA</span>
@@ -76,16 +81,19 @@
             <span class="skill-tag">JavaScript</span>
             <span class="skill-tag">Git & GitHub</span>
             <span class="skill-tag">Figma</span>
-          </div>
+         </div>
+         
           <a href="#contact" class="btn btn-primary" >Hire Me</a>
-        </div>
+          
       </div>
+    </div>
     </div>
   </section>
 
   <!-- ══════════ PROJECTS ══════════ -->
   <section id="projects">
     <div class="page-wrap">
+      
       <div class="section-title">
         <h2>Projects</h2>
         <p>Some of my recent works.</p>
@@ -153,7 +161,7 @@
 
         <div class="contact-info">
           <h3>Get in Touch</h3>
-          <p>Have a project in mind or just want to say hi? My inbox is always open — I respond within 24 hours.</p>
+          <p >I'm always happy to connect with new people, discuss ideas, or collaborate on interesting projects. Whether you have a question, want to work together, or just want to say hello, feel free to reach out. I'll do my best to reply as soon as possible.</p>
           <br><br>
           <div class="c-item">
             <div class="c-ico">
@@ -194,7 +202,7 @@
           </div>
 
           <br><br>
-          <h3>Connect With Me</h3>
+           <h3>Connect With Me</h3>
 
           <div class="social-row">
             <a href="https://github.com/Faisal-1638" target="_blank" class="social-btn" title="Github">
@@ -226,7 +234,7 @@
 
             <div class="fg">
               <label>Email</label>
-              <input type="email" placeholder="john@example.com" required>
+              <input type="email" placeholder="faisal@example.com" required>
             </div>
 
             <div class="fg">
@@ -243,7 +251,7 @@
 
             <div class="fg">
               <label>Message</label>
-              <textarea placeholder="Tell me about your project..."></textarea>
+              <textarea placeholder="Text me the Message Here...."></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; gap:8px;">
