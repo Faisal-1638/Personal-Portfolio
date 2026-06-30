@@ -143,6 +143,7 @@
     .hero-content h2{
      margin-bottom: 20px;
      font-size: 30px;
+     font-weight: 550;
     }
 
     .hero-content p {
@@ -363,8 +364,7 @@
 .contact-info h3 { 
   font-size: 24px; 
   font-weight: 700; 
-  margin-bottom: 10px; 
-  /* margin-top: 10px; */
+  margin-bottom: 20px; 
 }
 
 .contact-info p{
@@ -374,7 +374,7 @@
 }
 
 .c-ico{
-  width: 30px; height: 30px;
+  width: 35px; height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -389,7 +389,7 @@
   height: 25px;
   fill:none;
   stroke: rgb(247, 247, 249);
-  background-color: #00050d;
+  /* background-color: #00050d; */
   stroke-width: 1;
 }
 
@@ -510,7 +510,7 @@
 
   /* Hero */
   .hero{
-     background-position: center center;
+    background-position: center center;
     background-size: cover;
     min-height: 100vh;
   }
@@ -535,6 +535,16 @@
     font-size: 17px;
   }
 
+  .skill-tag{
+          padding: 5px 14px;
+          border-radius: 8px;
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        .social-row{
+          gap: 15px;
+        }
   /* contact  */
   .about-grid {
           grid-template-columns: 1fr;
@@ -550,16 +560,7 @@
         flex-direction: column;
         gap: 0;
       }
-        .skill-tag{
-          padding: 5px 14px;
-          border-radius: 8px;
-          font-size: 14px;
-          font-weight: 400;
-        }
-
-        .social-row{
-          gap: 12px;
-        }
+        
 }
 /* ══ FOOTER ══ */
  footer {
