@@ -507,11 +507,6 @@
     display: none;
   }
 
-  /* Form */
-  .frow {
-    flex-direction: column;
-    gap: 0;
-  }
 
   /* Hero */
   .hero{
@@ -540,19 +535,30 @@
     font-size: 17px;
   }
 
+  /* contact  */
   .about-grid {
           grid-template-columns: 1fr;
         }
 
         .contact-grid {
           grid-template-columns: 1fr;
+          gap: 32px;
         }
 
+            /* Form */
+      .frow {
+        flex-direction: column;
+        gap: 0;
+      }
         .skill-tag{
           padding: 5px 14px;
           border-radius: 8px;
           font-size: 14px;
           font-weight: 400;
+        }
+
+        .social-row{
+          gap: 12px;
         }
 }
 /* ══ FOOTER ══ */
