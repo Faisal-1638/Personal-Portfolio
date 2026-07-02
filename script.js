@@ -1,17 +1,53 @@
-const response = await fetch("https://script.google.com/macros/s/AKfycbwi63Gb8Crr6krteo-Kt4yQE31A5XFt4zdUj_VAFeOwdZe-LCOeCNM0X6G5qCvle2B_gg/exec", {
-    method: "POST",
-    headers: {
-        "Content-Type": "text/plain;charset=utf-8" 
-    },
-    body: JSON.stringify(data)
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzrHWX0INFfaH5xJNkZ7RB1x49zJPdPXvQWFZ2GEvvyWc4Kz6_4_yCKC5ZV1zFQHIfylQ/exec";
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = {
+        name: document.getElementById("name").value.trim(),
+        email: document.getElementById("email").value.trim(),
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value.trim()
+    };
+
+    const button = form.querySelector("button[type='submit']");
+    const originalText = button.innerHTML;
+
+    button.disabled = true;
+    button.innerHTML = "Sending...";
+
+    try {
+        await fetch(SCRIPT_URL, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+        });
+
+        alert("✅ Message sent successfully!");
+
+        form.reset();
+
+    } catch (error) {
+        console.error(error);
+        alert("❌ Failed to send message.");
+    }
+
+    button.disabled = false;
+    button.innerHTML = originalText;
 });
 
-const result = await response.json();
 
-if (result.result === "success") {
-    alert("✅ Message sent successfully!");
-    form.reset();
-} else {
-    alert("❌ Failed to send message.");
-    console.error(result.error);
-}
+/* page  */
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function() {
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.classList.remove('active');
+    });
+
+    this.classList.add('active');
+  });
+});
