@@ -197,6 +197,36 @@
 
     .btn-sm { padding: 9px 20px; font-size: 13px; border-radius: 8px; }
 
+    .s-row { 
+      display: flex;
+      justify-content: center; 
+      gap: 60px; 
+      margin-top: 90px;
+     }
+
+    .s-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      background: rgba(3, 3, 3, 0.286);
+      border: 2px solid var(--border);
+      color: var(--white);
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 500;
+      transition: all 0.24s;
+    }
+    .s-btn:hover { 
+      border-color: var(--sky); 
+      color: var(--sky); 
+      transform: translateY(-2px); 
+    }
+    .s-btn svg { 
+      width: 17px; height: 17px; fill: 
+      currentColor; 
+    }
     /* ══  PAGES ══ */
     .page-wrap {
       max-width: 1160px;
@@ -262,23 +292,6 @@
         font-size: 15px; 
       }
 
-      .skills-row { 
-        display: flex; 
-        flex-wrap: wrap; 
-        gap: 8px; 
-        margin: 25px 0 25px;  
-      }
-
-    .skill-tag {
-      background: rgba(56,189,248,0.08);
-      border: 1px solid rgba(56,189,248,0.2);
-      color: var(--sky);
-      padding: 8px 20px;
-      border-radius: 8px;
-      font-size: 13px;
-      font-weight: 500;
-    }
-
      .education-grid {
       display:grid;
       grid-template-columns: 1fr 1fr;
@@ -296,6 +309,35 @@
        color: var(--dim); 
        font-size: 15px; 
        margin: 8px 0 6px;
+    }
+
+    
+    .y-tag {
+      background: rgba(56, 191, 248, 0.023);
+      border: 1px solid rgba(56, 191, 248, 0.121);
+      color: var(--sky);
+      padding: 8px 20px;
+      border-radius: 15px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    
+      .skills-row { 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 8px; 
+        margin: 25px 0px 25px;
+      }
+
+    .skill-tag {
+      background: rgba(56,189,248,0.08);
+      border: 1px solid rgba(56, 191, 248, 0.088);
+      color: var(--sky);
+      padding: 15px 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
     }
 
 
