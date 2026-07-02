@@ -94,45 +94,37 @@
             <h2>Education</h2>
             <p>Know about my Academic journey.</p>
           </div>
-          <br><br>
           
           <div class="education-grid">
             <div class="edu">
-              <span class="skill-tag"> Start in 2025</span>
+              <span class="skill-tag"> 2025-Present</span>
               <br><br>
-              <h2>B.Sc.(ENGG) IN COMPUTER SCIENCE AND ENGINEERING </h2>
-              <br> 
-              Current CGPA: 3.66
-              <br><br>
-              Internatinal Islamic University Chittagong, Bangladesh</p>
+              <h3>B.Sc. IN COMPUTER SCIENCE AND ENGINEERING </h3> 
+              <p>Current CGPA: 3.66</p>
+             
+              <p>Internatinal Islamic University Chittagong, Bangladesh</p>
             </div>
             <div class="edu">
                <span class="skill-tag">2021</span>
                <br><br>
-              <h2>HIGHER SECONDARY SCHOOL CERTIFICATE(H.S.C)</h2>
-              <br>
-               Result: GPA 4.50
-               <br><br>
-               From - Gunabati Degree Colllege, Chouddagram, comilla
+              <h3>HIGHER SECONDARY SCHOOL CERTIFICATE(H.S.C)</h3>
+              <p>Result: GPA 4.50</p>              
+               <p>From - Gunabati Degree Colllege, Chouddagram, comilla</p>
             </div>
 
             <div class="edu">
                <span class="skill-tag">2019</span>
                <br><br>
-              <h2>Secondary School Certificate(S.S.C)</h2>
-              <br>
-              Result: GPA 4.17
-              <br><br>
+              <h3>Secondary School Certificate(S.S.C)</h3>
+              <p>Result: GPA 4.17</p>             
               <p>From - Gunabati High School</p>
             </div>
 
              <div class="edu">
                <span class="skill-tag">2016</span>
                <br><br>
-              <h2>Junior School Certificate(J.S.C)</h2>
-              <br>
-              Result: GPA 4.80
-              <br><br>
+              <h3>Junior School Certificate(J.S.C)</h3>
+              <P>Result: GPA 4.80</P>           
               <p>From - Gunabati High School</p>
             </div>
 
@@ -277,30 +269,37 @@
             <div class="frow">
               <div class="fg">
                 <label>Name</label>
-                <input type="text" placeholder="Your Name" required>
+                <input type="text" 
+                 id="name"
+                 name="name"
+                 placeholder="Your Name" required>
               </div>
             </div>
 
             <div class="fg">
               <label>Email</label>
-              <input type="email" placeholder="faisal@example.com" required>
+              <input type="email"  
+                     id="email"
+                     name="email" 
+                     placeholder="faisal@example.com" required>
             </div>
 
             <div class="fg">
-              <label>Project Type</label>
-              <select>
+              <label>Subject</label>
+              <select  id="subject" name="subject">
                 <option value="">Select type...</option>
                 <option>Web Application</option>
                 <option>Mobile App</option>
                 <option>UI/UX Design</option>
-                <option>E-Commerce</option>
-                <option>Consulting</option>
+                <option>Programming</option>
+                <option>DSA</option>
               </select>
             </div>
 
             <div class="fg">
               <label>Message</label>
-              <textarea placeholder="Text me the Message Here...."></textarea>
+              <textarea  id="message"
+                  name="message" placeholder="Text me the Message Here...."></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; gap:8px;">
@@ -340,6 +339,6 @@
 });
 
 </script>
- 
+ <script src="script.js"></script>
  </body>
 </html>

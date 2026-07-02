@@ -22,17 +22,19 @@
       overflow-x: hidden;
     }
 
-    /* ══ NAVBAR ══ */
+   
     header {
       width: 100%;
       position: fixed;
-      top: 0; left: 0;
+      top: 0; 
+      left: 0;
       z-index: 1000;
       background: rgba(30, 44, 58, 0.88);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(255,255,255,0.07);
     }
 
+     /* ══ NAVBAR ══ */
     nav {
       max-width: 1200px;
       margin: auto;
@@ -284,10 +286,16 @@
     }
     .edu {
       background: var(--bg);
-      border-left: 3px solid rgba(85, 227, 185, 0.911);
+      border-left: 2px solid rgba(85, 227, 185, 0.911);
       border-radius: 10px;
       overflow: hidden;
-      padding: 10px 5px 10px ;
+      padding: 10px 10px 10px ;
+    }
+
+    .edu p{
+       color: var(--dim); 
+       font-size: 15px; 
+       margin: 8px 0 6px;
     }
 
 
@@ -354,7 +362,7 @@
       padding: 14px 16px;
       margin-bottom: 15px;
 
-      background: rgba(255,255,255,0.05);
+      background: rgba(255,255,255,0.07);
       /* background: var(--bg2); */
       border: 1px solid var(--border);
       border-radius: 12px;
@@ -417,7 +425,7 @@
       align-items: center;
       gap: 8px;
       padding: 9px 18px;
-      background: rgba(255,255,255,0.05);
+      background: rgba(255,255,255,0.07);
       border: 1px solid var(--border);
       color: var(--white);
       border-radius: 12px;
@@ -438,14 +446,16 @@
 
     /* ---------> Form Box Section <--------- */
     .cform-box {
-      background: rgba(255,255,255,0.05);
+      background: rgba(255,255,255,0.07);
       border: 1px solid var(--border);
       border-radius: 20px;
       padding: 32px;
     }
     .cform-box h4 { 
-      font-size: 20px; font-weight: 700; 
-      margin-bottom: 22px; }
+      font-size: 20px; 
+      font-weight: 700; 
+      margin-bottom: 22px; 
+    }
 
     .frow { display: flex; gap: 14px; }
     .fg { flex: 1; margin-bottom: 14px; }
