@@ -348,6 +348,8 @@
 </footer>
 </section>
 <script>
+
+  /* Navigation pages */
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', function() {
     document.querySelectorAll('.nav-links a').forEach(a => {
@@ -358,6 +360,8 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
+/* Form  Submission */
+
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault(); // Stop the page from reloading
 
@@ -365,7 +369,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   const submitBtn = this.querySelector('button[type="submit"]');
   const originalText = submitBtn.innerHTML;
   submitBtn.disabled = true;
-  submitBtn.innerHTML = "Sending...";
+  submitBtn.innerHTML = "Sending.......";
 
   // Gather data from the form fields
   const formData = {
@@ -375,7 +379,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     message: document.getElementById('message').value
   };
 
-  // Replace this with your actual Google Apps Script Web App URL
   const webAppUrl = 'https://script.google.com/macros/s/AKfycbwCBQNPehIhWy-hseFTNu8dGr2vMUDvcuv9i1nbG6OJFl28Kq8qVT3Zh47flkQ-9IWkUQ/exec'; 
 
   // Send the data as JSON
@@ -388,7 +391,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     body: JSON.stringify(formData)
   })
   .then(() => {
-    alert('Message sent successfully!');
+    alert('✅ Message sent successfully!');
     this.reset(); // Clear the form
   })
   .catch(error => {
