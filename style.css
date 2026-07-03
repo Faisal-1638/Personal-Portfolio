@@ -581,8 +581,8 @@
   }
 
   .s-row {
-    gap: 15px;
-    margin-top: 40px;
+    gap: 12px;
+    margin-top: 30px;
   }
 
   .s-btn {
@@ -594,7 +594,7 @@
     width: 15px;
     height: 15px;
   }
-}
+
   /* Buttons */
   .btn {
     padding: 12px 25px;
@@ -607,7 +607,7 @@
     font-size: 17px;
   }
 
-  .skill-tag{
+     .skill-tag{
           padding: 5px 14px;
           border-radius: 8px;
           font-size: 14px;
@@ -617,8 +617,9 @@
         .social-row{
           gap: 15px;
         }
-  /* contact  */
-  .about-grid {
+
+    /* contact  */
+      .about-grid {
           grid-template-columns: 1fr;
         }
 
