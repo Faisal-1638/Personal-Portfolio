@@ -205,17 +205,18 @@
      }
 
     .s-btn {
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      gap: 8px;
-      padding: 9px 18px;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
       background: rgba(3, 3, 3, 0.286);
       border: 2px solid var(--border);
       color: var(--white);
-      border-radius: 12px;
+      border-radius: 50%;
       text-decoration: none;
-      font-size: 20px;
-      font-weight: 500;
+      /* font-size: 20px;
+      font-weight: 500; */
       transition: all 0.24s;
     }
     .s-btn:hover { 
@@ -224,8 +225,9 @@
       transform: translateY(-2px); 
     }
     .s-btn svg { 
-      width: 17px; height: 17px; fill: 
-      currentColor; 
+      width: 17px; 
+      height: 17px; 
+      fill: currentColor; 
     }
     /* ══  PAGES ══ */
     .page-wrap {
@@ -578,6 +580,21 @@
     line-height: 1.7;
   }
 
+  .s-row {
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  .s-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .s-btn svg {
+    width: 15px;
+    height: 15px;
+  }
+}
   /* Buttons */
   .btn {
     padding: 12px 25px;

@@ -39,15 +39,3 @@ form.addEventListener("submit", async (e) => {
     button.disabled = false;
     button.innerHTML = originalText;
 });
-
-
-/* page  */
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', function() {
-    document.querySelectorAll('.nav-links a').forEach(a => {
-      a.classList.remove('active');
-    });
-
-    this.classList.add('active');
-  });
-});
