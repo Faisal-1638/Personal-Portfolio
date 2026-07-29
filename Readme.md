@@ -1,6 +1,6 @@
 🎓 About My Portfolio Website
 
-This is my personal portfolio website, built with HTML, CSS, and vanilla JavaScript
+This is my personal portfolio website, built with HTML, CSS, and JavaScript
 
 to highlight my skills, projects, and academic journey. It features a clean hero 
 
@@ -18,4 +18,4 @@ modern, polished user experience.
 
 Figma Prototype
 
-View Figma Prototype (Replace # with your shareable Figma link)
+View Figma Prototype 

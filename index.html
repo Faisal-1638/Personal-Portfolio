@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Faisal's Portfolio</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- HEADER Section-->
   <header>
 
     <nav>
       <div class="logo">
-  <span class="logo-main">FA</span><span class="logo-dot">.</span><span class="logo-dev">Dev</span>
+       <span class="logo-main">FA</span><span class="logo-dot">.</span><span class="logo-dev">Dev</span>
       </div>
       <div class="navbox">
         <div class="nav-links" id="navLinks">
@@ -29,7 +26,6 @@
           <a href="#contact">Contact</a>
         </div>
       </div>
-    <!-- <button class="menu-btn" id="menuBtn">☰</button> -->
     </nav>
   </header>
 
@@ -84,9 +80,9 @@
 
         <div class="about-text">
     
-          <h3>Crafting Code. Solving Problems.</h3>
-         <p>I am a Computer Science student and aspiring frontend developer focused on creating clean, efficient, and user-centric web applications using HTML, CSS, and JavaScript. Alongside web development, I have built a strong foundational background in computer science, programming in C, C++, and Java, and actively applying Data Structures and Algorithms (DSA) to solve complex problems.</p>
-         <p>My objective is to leverage these technical skills to build fast, responsive, and highly optimized digital solutions while continuously learning and adapting to new technologies.</p>
+          <h3>Crafting Code & Solving Problems.</h3>
+          <p>I am a Computer Science student and aspiring frontend developer focused on creating clean, efficient, and user-centric web applications using HTML, CSS, and JavaScript. Alongside web development, I have built a strong foundational background in computer science, programming in C, C++, and Java, and actively applying Data Structures and Algorithms (DSA) to solve complex problems.</p>
+          <p>My objective is to leverage these technical skills to build fast, responsive, and highly optimized digital solutions while continuously learning and adapting to new technologies.</p>
           <br>
           <h2>Skills & Tech Stack</h2>
           <div class="skills-row">
@@ -97,15 +93,14 @@
             <span class="skill-tag">JavaScript</span>
             <span class="skill-tag">Git & GitHub</span>
             <span class="skill-tag">Figma</span>
-         </div>
-         
-          <!-- <a href="#contact" class="btn btn-primary" >Hire Me</a> -->
+          </div>
           
         </div>
       </div>
-      <br><br><br><br><br>
-       <hr style="width: 60%; height: 1px; border: none; background: #343030; margin: 0 auto;"><br><br>
-           
+        <hr class="divider">
+
+        <!--Education Section-->
+
           <div class="section-title">
             <h2>Education</h2>
             <p>Know about my Academic journey.</p>
@@ -144,16 +139,10 @@
               <p>From - Gunabati High School</p>
             </div>
 
-
           </div>
 
-          <br><br><br><br><br>
-       <hr style="width: 60%; height: 1px; border: none; background: #343030; margin: 0 auto;"><br><br>
-           
+         <hr class="divider">
     </div>
-
-
-
   </section>
 
   <!-- ══════════ PROJECTS ══════════ -->
@@ -294,7 +283,7 @@
                 <input type="text" 
                  id="name"
                  name="name"
-                 placeholder="Your Name" required>
+                 placeholder="Enter Your Name" required>
               </div>
             </div>
 
@@ -303,28 +292,28 @@
               <input type="email"  
                      id="email"
                      name="email" 
-                     placeholder="faisal@example.com" required>
+                     placeholder="Example: faisal@gmail.com" required>
             </div>
 
             <div class="fg">
               <label>Subject</label>
               <select  id="subject" name="subject">
                 <option value="">Select type...</option>
-                <option>Web Application</option>
+                <option>Web Developement</option>
                 <option>Mobile App</option>
-                <option>UI/UX Design</option>
-                <option>Programming</option>
                 <option>DSA</option>
+                <option>Programming</option>
+                <option>UI/UX Design</option>
               </select>
             </div>
 
             <div class="fg">
               <label>Message</label>
               <textarea  id="message"
-                  name="message" placeholder="Text me the Message Here...."></textarea>
+                  name="message" placeholder="Text me the Message here........."></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; gap:8px;">
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; gap:8px;" title="Click for sending">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
                 <path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"
                   stroke="currentColor" stroke-width="1.8"
@@ -335,7 +324,7 @@
           </form>
         </div>
 
-      </div><!-- end contact-grid -->
+      </div>
     </div>
 
     <footer>

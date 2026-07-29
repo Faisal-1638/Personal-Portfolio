@@ -1,9 +1,7 @@
- html 
- {
-  scroll-behavior:smooth;
- }
-
- *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+  html 
+  {
+    scroll-behavior:smooth;
+  }
 
     :root {
         --bg:#070b12;
@@ -29,12 +27,12 @@
       top: 0; 
       left: 0;
       z-index: 1000;
-      background: rgba(30, 44, 58, 0.88);
+      background: rgba(26, 38, 50, 0.88);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(255,255,255,0.07);
     }
 
-     /* ══ NAVBAR ══ */
+     /* -----> NAVBAR Section <------- */
     nav {
       max-width: 1200px;
       margin: auto;
@@ -113,16 +111,6 @@
       transition: 0.3s ease;
     }
 
-    /* ══ PAGE SYSTEM ══ */
-    
-    /* .page { display: none; }
-    .page.active { display: block; animation: fadeUp 0.38s ease both; }
-
-    @keyframes fadeUp {
-      from { opacity:0; transform:translateY(24px); }
-      to   { opacity:1; transform:translateY(0); }
-    } */
-
     /*  ----------------> HERO/Home Section <--------------*/
     .hero 
     {
@@ -152,6 +140,7 @@
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 22px;
+      margin-top: 15px;
     }
 
     .hero-content h2{
@@ -267,6 +256,13 @@
       font-size: 15px; 
     }
 
+    .divider {
+    width: 60%;
+    height: 1px;
+    border: none;
+    background: #f4f1f10f;
+    margin: 80px auto;
+}
     /* --------------> ABOUT <--------------*/
 
     .about-grid {
@@ -320,6 +316,7 @@
       border-radius: 10px;
       overflow: hidden;
       padding: 10px 10px 10px ;
+      margin-bottom: 30px;
     }
 
     .edu p{
@@ -421,8 +418,7 @@
       padding: 14px 16px;
       margin-bottom: 15px;
 
-      background: rgba(255,255,255,0.07);
-      /* background: var(--bg2); */
+      background: rgba(255, 255, 255, 0.021);
       border: 1px solid var(--border);
       border-radius: 12px;
 
@@ -484,7 +480,7 @@
       align-items: center;
       gap: 8px;
       padding: 9px 18px;
-      background: rgba(255,255,255,0.07);
+      background: rgba(255, 255, 255, 0.038);
       border: 1px solid var(--border);
       color: var(--white);
       border-radius: 12px;
@@ -494,9 +490,10 @@
       transition: all 0.24s;
     }
     .social-btn:hover { 
-      border-color: var(--sky); 
-      color: var(--sky); 
-      transform: translateY(-2px); 
+      border-color: #0fad90; 
+      background-color: #0e9a80;
+      /* color: var(--sky);  */
+      /* transform: translateY(-2px);  */
     }
     .social-btn svg { 
       width: 17px; height: 17px; fill: 
@@ -505,7 +502,7 @@
 
     /* ---------> Form Box Section <--------- */
     .cform-box {
-      background: rgba(255,255,255,0.07);
+      background: rgba(255, 255, 255, 0.045);
       border: 1px solid var(--border);
       border-radius: 20px;
       padding: 32px;
@@ -535,6 +532,7 @@
       background: var(--bg);
       border: 1px solid rgba(255,255,255,0.08);
       border-radius: 9px;
+      box-sizing: border-box;
       color: var(--white);
       font-size: 14px;
       font-family: 'Poppins', sans-serif;
@@ -546,7 +544,7 @@
     .fg select:focus { border-color: var(--sky); }
     .fg select option { background: var(--bg2); }
     .fg textarea { 
-      resize:both; height: 115px; 
+      resize:none; height: 115px; 
     }
 
     /* --------------> RESPONSIVE Section/Mobile view handle <------------- */
@@ -581,6 +579,26 @@
     display: none;
   }
 
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo {
+        margin-bottom: 2px;
+    }
+
+    .navbox {
+        width:fit-content;
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
   /* Hero */
   .hero{
@@ -649,10 +667,10 @@
       .frow {
         flex-direction: column;
         gap: 0;
-      }
-        
+      }    
 }
-/* ══ FOOTER ══ */
+
+/* ══ FOOTER Section ══ */
  footer {
   text-align: center;
   padding: 26px 20px;
@@ -677,13 +695,9 @@
 .dot {
   width: 12px;
   height: 12px;
-  background-color: #16c35b;
+  background-color: #35d575;
   border-radius: 50%;
   flex-shrink: 0;
-  /* box-shadow:
-    0 0 5px #22c55e,
-    0 0 10px #22c55e,
-    0 0 20px #22c55e; */
   animation: pulse 2s infinite;
 }
 
