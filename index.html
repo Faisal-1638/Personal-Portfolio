@@ -13,7 +13,6 @@
 
   <!-- HEADER Section-->
   <header>
-
     <nav>
       <div class="logo">
        <span class="logo-main">FA</span><span class="logo-dot">.</span><span class="logo-dev">Dev</span>
@@ -255,6 +254,68 @@
     </div>
   </section>
 
+  <section id="extras" class="section">
+
+    <div class="section-title">
+        <h2>More About Me</h2>
+        <p>Achievements, writings, hobbies and publications.</p>
+    </div>
+
+    <div class="extras-grid">
+
+        <!-- Achievements -->
+        <div class="extra-card">
+            <div class="icon">🏆</div>
+
+            <h3>Achievements</h3>
+
+            <ul>
+                <li>💻 Completed 400+ Coding Problems</li>
+                <li>🏅................. </li>
+                <li>🥇 Programming Contest Finalist</li>
+                <li>🎖️ Web Developer</li>
+            </ul>
+
+        </div>
+
+        <!-- Blog / Hobbies -->
+        <div class="extra-card">
+
+            <h3>Blogs • Hobbies • Showcase</h3>
+
+            <p>
+                I enjoy creating responsive websites, solving programming
+                challenges, learning new technologies and sharing my
+                knowledge through blogs and tutorials.
+            </p>
+
+            <div class="tags">
+                <span>Coding</span>
+                <span>Reading</span>
+                <span>Football</span>
+                 <span>Cricket</span>
+                <span>Travel</span>
+                <span>Photography</span>
+            </div>
+
+        </div>
+
+        <!-- Publications -->
+        <div class="extra-card">
+
+            <div class="icon">📚</div>
+
+            <h3>Publications</h3>
+
+
+            <a href="#">View Publications →</a>
+
+        </div>
+
+    </div>
+
+</section>
+
   <!-- ══════════ CONTACT ══════════ -->
 
     <section id="contact" class="contact">
@@ -392,64 +453,8 @@
   </div>
 </footer>
 </section>
-<script>
 
-  /* Navigation pages */
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', function() {
-    document.querySelectorAll('.nav-links a').forEach(a => {
-      a.classList.remove('active');
-    });
+ <script src="script.js"></script>
 
-    this.classList.add('active');
-  });
-});
-
-/* Form  Submission */
-
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault(); // Stop the page from reloading
-
-  // Get the submit button to show loading status
-  const submitBtn = this.querySelector('button[type="submit"]');
-  const originalText = submitBtn.innerHTML;
-  submitBtn.disabled = true;
-  submitBtn.innerHTML = "Sending.......";
-
-  // Gather data from the form fields
-  const formData = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    subject: document.getElementById('subject').value,
-    message: document.getElementById('message').value
-  };
-
-  const webAppUrl = 'https://script.google.com/macros/s/AKfycbwCBQNPehIhWy-hseFTNu8dGr2vMUDvcuv9i1nbG6OJFl28Kq8qVT3Zh47flkQ-9IWkUQ/exec'; 
-
-  // Send the data as JSON
-  fetch(webAppUrl, {
-    method: 'POST',
-    mode: 'no-cors', // Essential for Google Apps Script redirects
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(formData)
-  })
-  .then(() => {
-    alert('✅ Message sent successfully!');
-    this.reset(); // Clear the form
-  })
-  .catch(error => {
-    console.error('Error:', error);
-    alert('Failed to sent. Please try again.');
-  })
-  .finally(() => {
-    // Reset button state
-    submitBtn.disabled = false;
-    submitBtn.innerHTML = originalText;
-  });
-});
-</script>
- 
  </body>
 </html>

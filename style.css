@@ -428,6 +428,122 @@
       gap: 10px; 
     }
 
+
+    .extras-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin:45px 45px 45px;
+}
+
+.extra-card{
+
+    background:var(--bg);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:15px;
+
+    padding:30px;
+
+    transition:.35s;
+
+}
+
+.extra-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--sky);
+
+    box-shadow:0 12px 30px rgba(56,189,248,.15);
+
+}
+
+.icon{
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+}
+
+.extra-card h3{
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+    font-size:24px;
+
+}
+
+.extra-card p{
+
+    color:var(--muted);
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+.extra-card ul{
+
+    padding-left:20px;
+
+}
+
+.extra-card li{
+
+    color:var(--muted);
+
+    margin-bottom:12px;
+
+}
+
+.tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.tags span{
+
+    background:rgba(56,189,248,.08);
+
+    color:var(--sky);
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+}
+
+.extra-card a{
+
+    color:var(--sky);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.extra-card a:hover{
+
+    text-decoration:underline;
+
+}
+
     /* --------------> CONTACT Section<--------------- */
     .contact-grid {
       display: grid;
