@@ -9,7 +9,7 @@
         --sky:#0cd6b1;
         --white:#f1f5f9;
         --muted:#e5e8ec;
-        --dim: #c3d0e3;
+        --dim:#c3d0e3;
         --border:rgba(255,255,255,0.08);
     }
 
@@ -166,7 +166,7 @@
 
     /* ══ BUTTONS ══ */
     .btn {
-      padding: 13px 32px;
+      padding: 14px 28px;
       border-radius: 10px;
       font-size: 15px;
       font-weight: 600;
@@ -185,8 +185,12 @@
     .btn-primary:hover {
       background: #24b99b;
       transform: translateY(0px) scale(1.05);
-      /* box-shadow: 0 12px 28px rgba(56,189,248,0.3); */
     }
+
+    .btn-primary i{
+    font-size:16px;
+    margin-right:1px;
+}
 
     .btn-outline {
       background: transparent;
@@ -194,9 +198,7 @@
       border: 2px solid rgba(255,255,255,0.22);
     }
     .btn-outline:hover {
-      /* border-color: var(--sky); */
       color: var(--sky);
-      /* transform: translateY(-2px); */
     }
 
     .btn-sm { padding: 9px 20px; font-size: 13px; border-radius: 8px; }
@@ -274,7 +276,7 @@
 
     .about-photo img {
       width: 100%;
-      border: 1px solid rgb(112, 228, 186);
+      border: 1px solid rgba(112, 228, 185, 0.678);
       border-radius: 20px;
       display: block;
     }
@@ -452,12 +454,9 @@
 
 .extra-card:hover{
 
-    transform:translateY(-8px);
-
     border-color:var(--sky);
 
-    box-shadow:0 12px 30px rgba(56,189,248,.15);
-
+    /* box-shadow:0 12px 30px rgba(56,189,248,.15); */
 }
 
 .icon{
