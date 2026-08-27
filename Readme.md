@@ -44,14 +44,14 @@ Clone the repository:
 
 Bash
 
-git clone https://github.com/faisal-1638/Personal-Portfolio.git
+ git clone https://github.com/faisal-1638/Personal-Portfolio.git
 
 
 Navigate into the project directory:
 
 Bash
 
-cd Personal-Portfolio
+ cd Personal-Portfolio
 
 
 Open the project:
