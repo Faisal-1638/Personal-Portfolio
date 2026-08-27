@@ -1,7 +1,8 @@
-  html 
-  {
-    scroll-behavior:smooth;
-  }
+  html{
+    scrollbar-color:#21a37c #eee;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;  
+}
 
     :root {
         --bg:#070b12;
@@ -122,7 +123,7 @@
       padding: 100px 20px 60px;
       background:
         linear-gradient(rgba(0,0,0,0.80), rgba(0,0,0,0.95)),
-         url('image/mosque.jpg');
+         url('image/photo2.jpg');
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -681,7 +682,7 @@
     .fg select:focus { border-color: var(--sky); }
     .fg select option { background: var(--bg2); }
     .fg textarea { 
-      resize:none; height: 115px; 
+      resize:vertical; height: 115px; 
     }
 
     /* --------------> RESPONSIVE Section/Mobile view handle <------------- */
