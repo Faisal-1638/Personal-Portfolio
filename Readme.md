@@ -38,20 +38,21 @@ https://faisal-1638.github.io/Personal-Portfolio/
 Figma Design Prototype: 
 https://www.figma.com/design/8bfdVlpuI4DR9DM5AeRiez/Faisal-s-Portfolio?node-id=0-1&p=f&t=exlYa6sgYOYSXbED-0
 
-### How to Run Locally
+## How to Run Locally
 
 Clone the repository:
 
 Bash
 
- git clone https://github.com/faisal-1638/Personal-Portfolio.git
+   git clone https://github.com/faisal-1638
+   Personal-Portfolio.git
 
 
 Navigate into the project directory:
 
 Bash
 
- cd Personal-Portfolio
+   cd Personal-Portfolio
 
 
 Open the project:

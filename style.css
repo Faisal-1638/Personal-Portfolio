@@ -90,7 +90,7 @@
       display:block;
     }
 
-    .nav-links a:hover { 
+    .nav-links a:hover { /* pseudo-class */
       color: var(--white); 
       background: rgba(56,189,248,0.08); 
     }
@@ -127,7 +127,7 @@
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
-           background-attachment: fixed;
+          background-attachment: fixed;
     }
 
     .hero-content { 
@@ -218,7 +218,7 @@
       width: 45px;
       height: 45px;
       background: rgba(3, 3, 3, 0.286);
-      border: 2px solid var(--border);
+      border: none;
       color: var(--white);
       border-radius: 50%;
       text-decoration: none;
@@ -227,13 +227,35 @@
       transition: all 0.24s;
     }
     .s-btn:hover { 
-      border-color: var(--sky); 
-      color: var(--sky); 
-      transform: translateY(-2px); 
+      color: var(--sky);  
     }
+
+    .s-btn:nth-child(1):hover { 
+      background-color: black;
+      color: white;  
+    }
+
+    
+    .s-btn:nth-child(2):hover { 
+      background-color: rgb(36, 114, 231);
+      color: white;  
+    }
+
+    
+    .s-btn:nth-child(3):hover { 
+      background-color: black;
+      color: white;  
+    }
+
+    
+    .s-btn:nth-child(4):hover { 
+      background-color: rgb(7, 55, 102);
+      color: white;  
+    }
+
     .s-btn svg { 
-      width: 17px; 
-      height: 17px; 
+      width: 18px; 
+      height: 18px; 
       fill: currentColor; 
     }
     /* ══  PAGES ══ */
@@ -538,7 +560,7 @@
 
 }
 
-.extra-card a:hover{
+.extra-card a:hover{ /* pseudo-class */
 
     text-decoration:underline;
 
@@ -623,15 +645,33 @@
       color: var(--white);
       border-radius: 12px;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 30px;
       font-weight: 500;
       transition: all 0.24s;
     }
-    .social-btn:hover { 
-      border-color: #0fad90; 
-      background-color: #0e9a80;
-      /* color: var(--sky);  */
-      /* transform: translateY(-2px);  */
+    
+    
+    .social-btn:nth-child(1):hover { 
+      background-color: black;
+      color: white;  
+    }
+
+    
+    .social-btn:nth-child(2):hover { 
+      background-color: rgb(36, 114, 231);
+      color: white;  
+    }
+
+    
+    .social-btn:nth-child(3):hover { 
+      background-color: black;
+      color: white;  
+    }
+
+    
+    .social-btn:nth-child(4):hover { 
+      background-color: rgb(7, 55, 102);
+      color: white;  
     }
     .social-btn svg { 
       width: 17px; height: 17px; fill: 
