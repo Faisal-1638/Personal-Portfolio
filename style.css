@@ -456,8 +456,8 @@
 
     .extras-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:28px;
     margin:45px 45px 45px;
 }
 
@@ -469,7 +469,7 @@
 
     border-radius:15px;
 
-    padding:30px;
+    padding:25px 20px;
 
     transition:.35s;
 
