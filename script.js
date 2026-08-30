@@ -54,3 +54,24 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     submitBtn.innerHTML = originalText;
   });
 });
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      // Stagger appearance slightly based on item index
+      setTimeout(() => {
+        entry.target.classList.add('show');
+      }, (index % 4) * 100); 
+    } else {
+      // Remove class so it re-animates when scrolling back up/down
+      entry.target.classList.remove('show');
+    }
+  });
+}, {
+  threshold: 0.30 // Triggers when 15% of the card is visible
+});
+
+// Observe all skill cards
+document.querySelectorAll('.skill-card').forEach((card) => {
+  observer.observe(card);
+});

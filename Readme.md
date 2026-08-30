@@ -32,29 +32,29 @@ JavaScript - Interactivity and smooth navigation
 
 ### Important Links
 
+``` Bash
 Live Portfolio: 
 https://faisal-1638.github.io/Personal-Portfolio/
 
 Figma Design Prototype: 
 https://www.figma.com/design/8bfdVlpuI4DR9DM5AeRiez/Faisal-s-Portfolio?node-id=0-1&p=f&t=exlYa6sgYOYSXbED-0
 
-## How to Run Locally
+### How to Run Locally
 
 Clone the repository:
 
-Bash
+``` Bash
 
    git clone https://github.com/faisal-1638
    Personal-Portfolio.git
 
 
-Navigate into the project directory:
+**Navigate into the project directory:**
 
-Bash
-
+``` Bash
    cd Personal-Portfolio
 
 
-Open the project:
+**Open the project:**
 
 Open index.html directly in your preferred browser, or use a live server extension (e.g., VS Code Live Server).
