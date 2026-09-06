@@ -22,6 +22,29 @@ The website serves as an interactive platform to showcase my technical skills, a
 
 **Responsive Design:** Optimized layout with smooth animations to deliver a seamless user experience across all screen sizes.
 
+## Future Improvements
+
+I plan to continuously improve my portfolio by adding new features and showcasing my learning journey. Future improvements include:
+
+* **Blogs and Achievements** — Sharing my learning experiences, problem-solving journey, and future achievements.
+* **Dark and Light Mode** — Adding a theme switcher to improve user experience and accessibility.
+* **More Skills and Projects** — Continuously adding new skills and projects based on my learning and practical experience.
+* **Improved UI/UX** — Enhancing the design and usability of my portfolio.
+* **More Interactive Features** — Adding useful and interactive features as I continue to learn new technologies.
+
+
+My goal is to continuously improve my problem-solving and software
+development skills. In the coming years, I plan to:
+
+* Become stronger in Data Structures and Algorithms.
+* Improve my competitive programming skills by solving more challenging problems.
+* Learn advanced C++ and modern programming practices.
+* Build real-world projects using web and software development technologies.
+* Learn Database Management Systems and backend development.
+* Contribute to open-source projects.
+* Develop strong teamwork and communication skills.
+* Prepare myself for a professional career as a Software Engineer.
+
 ### Built With
 
 HTML5 - Structure and semantic content
