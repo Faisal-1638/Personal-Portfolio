@@ -5,8 +5,8 @@
 }
 
     :root {
-        --bg:#070b12;
-        --bg2:#0f172a;
+        --bg:#000000;
+        --bg2:#030509;
         --sky:#0cd6b1;
         --white:#f1f5f9;
         --muted:#e5e8ec;
@@ -606,7 +606,6 @@
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.092);
   height: 150px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -663,17 +662,18 @@
     .card {
       background: var(--bg2);
       border: 1px solid rgba(252, 248, 248, 0.115);
-      border-radius: 30px;
+      border-radius: 10px;
       overflow: hidden;
       transition: transform 0.32s, box-shadow 0.32s, border-color 0.32s;
     }
     .card img { 
       width: 100%; 
       height: 200px; 
-      object-fit: cover; display: block; 
+      object-fit: cover; 
+      display: block; 
     }
 
-    .card-body { padding: 24px; }
+    .card-body { padding: 28px; }
 
     .card-tag {
       display: inline-block;
@@ -682,7 +682,7 @@
       letter-spacing: 1.4px;
       text-transform: uppercase;
       color: var(--sky);
-      margin-bottom: 30px;
+      margin-bottom: 8px;
     }
 
     .card-body h3 { 
@@ -705,18 +705,18 @@
     .extras-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:28px;
+    gap:20px;
     margin:45px 45px 45px;
 }
 
 .extra-card{
 
-    background:var(--bg);
+    background:var(--bg2);
 
     border:1px solid rgba(255,255,255,.08);
 
     border-radius:15px;
-
+    margin: 30px;
     padding:25px 20px;
 
     transition:.35s;
@@ -930,7 +930,9 @@
     .cform-box {
       background: rgba(255, 255, 255, 0.045);
       border: 1px solid var(--border);
-      border-radius: 20px;
+       backdrop-filter: blur(50px);
+      -webkit-backdrop-filter: blur(30px);
+      border-radius: 15px;
       padding: 32px;
     }
     .cform-box h4 { 
