@@ -394,10 +394,10 @@
     } */
 
     .education-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
-}
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+  }
 
 
 /* Education Card */
@@ -405,12 +405,13 @@
   position: relative;
 
   background: linear-gradient(
-    145deg,
-    rgba(255, 255, 255, 0.04),
-    rgba(255, 255, 255, 0.01)
+    180deg,
+    rgb(0, 0, 0),
+    rgb(6, 12, 33),
+    rgba(24, 123, 83, 0.292)
   );
 
-  border: 1px solid rgba(85, 227, 185, 0.15);
+  border: 1px solid rgba(85, 227, 199, 0.15);
   border-left: 2px solid rgba(85, 227, 185, 0.8);
 
   border-radius: 18px;
@@ -438,7 +439,7 @@
 
 
 /* Decorative glow */
-.edu::before {
+/* .edu::before {
   content: "";
   position: absolute;
 
@@ -448,7 +449,7 @@
   top: -90px;
   right: -90px;
 
-  background: rgba(85, 227, 185, 0.12);
+  background: rgba(78, 201, 162, 0.12);
 
   border-radius: 50%;
 
@@ -457,7 +458,7 @@
   pointer-events: none;
 
   transition: 0.4s ease;
-}
+} */
 
 
 /* Bottom accent line */
@@ -474,9 +475,9 @@
 
   background: linear-gradient(
     90deg,
-    #0CD6B1,
-    #10B981,
-    #22C55E
+    #0baf91,
+    #10b96a,
+    #121d77
   );
 
   transition: width 0.4s ease;
@@ -485,7 +486,7 @@
 
 /* Hover Effect */
 .edu:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px) scale(1.05);
 
   border-color: rgba(85, 227, 185, 0.5);
 
@@ -556,7 +557,7 @@
 
   background: rgba(56, 191, 248, 0.12);
 
-  border-color: rgba(56, 191, 248, 0.4);
+  border-color: rgb(18, 215, 136);
 }
 /* 
 .skills-grid{
