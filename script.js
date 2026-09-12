@@ -41,7 +41,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     body: JSON.stringify(formData)
   })
   .then(() => {
-    alert('✅ Message sent successfully!');
+    alert('✅ Message sent successfully! I will response as soon as possible');
     this.reset(); // Clear the form
   })
   .catch(error => {
