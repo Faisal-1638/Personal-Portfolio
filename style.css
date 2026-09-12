@@ -1199,13 +1199,6 @@
     font-size: 17px;
   }
 
-  .message-btn {
-    right: 10px;
-    bottom: 10px;
-    width: 40px;
-    height: 40px;
-  }
-
      .skill-tag{
           padding: 5px 14px;
           border-radius: 8px;
@@ -1232,6 +1225,41 @@
         flex-direction: column;
         gap: 0;
       }    
+}
+
+@media (max-width: 600px) {
+
+    .message-btn {
+        right: 16px;
+        bottom: 16px;
+
+        width: 40px;
+        height: 40px;
+    }
+
+    .message-btn i {
+        left: 50%;
+        top: 50%;
+
+        font-size: 16px;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .message-btn:hover {
+        width: 125px;
+    }
+
+    .message-btn:hover i {
+        left: 18px;
+
+        transform: translateY(-50%);
+    }
+
+    .message-btn span {
+        left: 43px;
+        font-size: 12px;
+    }
 }
 
 @media (max-width:480px){
