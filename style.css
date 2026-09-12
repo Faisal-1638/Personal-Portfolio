@@ -205,8 +205,8 @@
 
     .btn-primary { background: var(--sky); color: #020b16; }
     .btn-primary:hover {
-      background: #24b99b;
-      transform: translateY(0px) scale(1.05);
+      background: #0acba1;
+      
     }
 
     .btn-primary i{
@@ -557,7 +557,7 @@
 
   background: rgba(56, 191, 248, 0.12);
 
-  border-color: rgb(18, 215, 136);
+  border-color: rgb(74, 76, 101);
 }
 /* 
 .skills-grid{
@@ -665,6 +665,10 @@
       border-radius: 10px;
       overflow: hidden;
       transition: transform 0.32s, box-shadow 0.32s, border-color 0.32s;
+    }
+
+    .card:hover{
+      border-color: rgba(255, 170, 0, 0.464);
     }
     .card img { 
       width: 100%; 
@@ -847,24 +851,34 @@
         font-size: 16px; 
 }
 
-.c-ico{
-  width: 35px; height: 35px;
+.c-ico {
+  width: 35px;
+  height: 35px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border-radius: 10px;
-  background: linear-gradient(135deg, #60a5fa, #3b82f6); */
-  color: rgb(255, 255, 255);
+
   flex-shrink: 0;
 }
 
-.c-ico svg{
-  width: 25px;
-  height: 25px;
-  fill:none;
-  stroke: rgb(247, 247, 249);
-  /* background-color: #00050d; */
-  stroke-width: 1;
+.c-ico i {
+  font-size: 25px;
+}
+
+/* WhatsApp */
+.c-ico.whatsapp {
+  color: #25D366;
+}
+
+/* Gmail */
+.c-ico.gmail {
+  color: #EA4335;
+}
+
+/* Location */
+.c-ico.location {
+  color: #4285F4;
 }
 
 .c-lbl{
