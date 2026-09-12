@@ -408,7 +408,8 @@
     180deg,
     rgb(0, 0, 0),
     rgb(6, 12, 33),
-    rgba(24, 123, 83, 0.292)
+    rgba(20, 34, 115, 0.292),
+    rgba(18, 95, 64, 0.292)
   );
 
   border: 1px solid rgba(85, 227, 199, 0.15);
@@ -477,6 +478,7 @@
     90deg,
     #0baf91,
     #10b96a,
+    #591277,
     #121d77
   );
 
@@ -507,13 +509,9 @@
 /* Paragraph */
 .edu p {
   color: var(--dim);
-
   font-size: 15px;
-
   line-height: 1.7;
-
-  margin: 10px 0 16px;
-
+  margin: 6px 0 6px;
   position: relative;
   z-index: 1;
 }
@@ -526,11 +524,12 @@
   align-items: center;
   justify-content: center;
 
+  gap : 10px;
   background: rgba(56, 191, 248, 0.08);
 
   border: 1px solid rgba(56, 191, 248, 0.22);
 
-  color: var(--sky);
+  color: rgb(32, 32, 155);
 
   padding: 8px 18px;
 
@@ -551,6 +550,10 @@
   transition: 0.3s ease;
 }
 
+.y-tag i {
+  font-size: 15px;
+  color: #4068aa;
+}
 
 .edu:hover .y-tag {
   transform: scale(1.05);
@@ -559,40 +562,7 @@
 
   border-color: rgb(74, 76, 101);
 }
-/* 
-.skills-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-    gap:25px;
-    margin-top:50px;
-}
 
-.skill-card{
-   background: rgba(56, 191, 248, 0.045);
-   border-radius:20px;
-   border:1px solid rgba(255, 255, 255, 0.092);
-   height:150px;
-
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-
-  transition:.35s;
-  cursor:pointer;
-}
-
-.skill-card i{
-    font-size:50px;
-    margin-bottom:22px;
-    margin-top: 20px ;
-}
-
-.skill-card h3{
-    color:#fcfcfc;
-    font-size:20px;
-    font-weight:500;
-} */
 
 .skills-grid {
   display: grid;
@@ -668,7 +638,7 @@
     }
 
     .card:hover{
-      border-color: rgba(255, 170, 0, 0.464);
+      border-color: rgba(117, 115, 113, 0.903);
     }
     .card img { 
       width: 100%; 
